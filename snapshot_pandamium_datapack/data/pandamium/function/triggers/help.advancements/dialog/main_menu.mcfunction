@@ -58,6 +58,10 @@ data modify storage pandamium:local functions."pandamium:triggers/help.advanceme
                     } \
                 ] \
             }, \
+            "action": { \
+                "type": "minecraft:run_command", \
+                "command": "trigger help.advancements set 101" \
+            }, \
         }, \
         { \
             "label": { \
