@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"value": "vanilla:gameplay/chicken_lay"
+				}
+			],
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:reference",
+						"name": "pandamium:in_spawn"
+					}
+				}
+			]
+		}
+	]
+}
