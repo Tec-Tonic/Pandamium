@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:location_check",
+  "predicate": {
+    "dimension": "pandamium:hub",
+    "position": {
+      "x": {
+        "min": -512,
+        "max": 512
+      },
+      "z": {
+        "min": -512,
+        "max": 512
+      }
+    }
+  }
+}
