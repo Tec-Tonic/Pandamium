@@ -48,3 +48,5 @@ execute if score <secondary_pronouns_type> variable matches 0 run data remove st
 execute if score <secondary_pronouns_type> variable matches 0 run scoreboard players reset @s secondary_pronouns_type
 function pandamium:utils/database/players/save
 function pandamium:player/update_tablist_value
+# return to the dialog-based options menu
+function pandamium:triggers/options/dialog/main_menu
