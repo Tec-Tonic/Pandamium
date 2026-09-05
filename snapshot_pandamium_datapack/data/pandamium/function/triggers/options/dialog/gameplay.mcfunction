@@ -93,7 +93,11 @@ data modify storage pandamium:local functions."pandamium:triggers/options/*".dia
         }\
     ],\
     yes: {\
-        label: "Ignore Changes"\
+        label: "Ignore Changes",\
+         action: {\
+            type: "run_command",\
+            command: "/trigger options"\
+        }\
     },\
     no: {\
         label: "Done",\
