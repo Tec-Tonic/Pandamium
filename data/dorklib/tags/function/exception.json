@@ -1,0 +1,8 @@
+{
+	"values": [
+		{
+			"id": "dorklib:print_exception_message",
+			"required": false
+		}
+	]
+}

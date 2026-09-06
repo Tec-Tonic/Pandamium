@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "items": "#pandamium:christmas_mob_weapons",
+          "expand": true
+        }
+      ]
+    }
+  ]
+}
