@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "votes": {
+      "min": 2500
+    },
+    "playtime_ticks": {
+      "min": 180000000
+    }
+  }
+}

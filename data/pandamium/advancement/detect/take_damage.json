@@ -1,0 +1,16 @@
+{
+	"parent": "pandamium:detect/root",
+	"criteria": {
+		"take_damage": {
+			"trigger": "minecraft:entity_hurt_player"
+		}
+	},
+	"requirements": [
+		[
+			"take_damage"
+		]
+	],
+	"rewards": {
+		"function": "pandamium:detect/take_damage/main"
+	}
+}

@@ -1,0 +1,1 @@
+title @s actionbar [{text:" You cannot break Bedrock at the bottom of the world while sneaking!",color:"red"}]
