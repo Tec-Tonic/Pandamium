@@ -33,6 +33,7 @@ scoreboard players set <db.players.latest_data_version> global 9
 scoreboard players set <db.mail.latest_data_version> global 2
 scoreboard players set <db.entities.latest_data_version> global 1
 # Useful Constants
+scoreboard objectives add pandamium.mob_head_plays dummy
 scoreboard objectives add pandamium.temp dummy
 scoreboard players set #three pandamium.temp 3
 scoreboard players set #two pandamium.temp 2
