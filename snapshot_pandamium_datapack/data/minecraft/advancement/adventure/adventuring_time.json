@@ -1412,6 +1412,31 @@
           ]
         }
       }
+    },
+    "minecraft:ice_caves": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "gamemode": [
+                    "survival"
+                  ]
+                },
+                "minecraft:location": {
+                  "biomes": "minecraft:ice_caves"
+                }
+              }
+            },
+            "pandamium:player/can_gain_advancements_locational"
+          ]
+        }
+      }
     }
   },
   "rewards": {

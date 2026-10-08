@@ -39,7 +39,7 @@ data modify storage pandamium:rewards_shop dialogs.misc.dialog set value {\
 				},\
 				{\
 					"bold": true,\
-					"text": "\n\n\nMiscellaneous Rewards\n"\
+					"text": "\n\n\nGeneral Rewards\n"\
 				},\
 				{\
 					"bold": false,\
@@ -86,8 +86,7 @@ function pandamium:startup/rewards_shop/load_pages/append_item {dialog_name: "mi
 function pandamium:startup/rewards_shop/load_pages/append_item {dialog_name: "misc", reward_id: "enchanted_golden_apple"}
 function pandamium:startup/rewards_shop/load_pages/append_random_online_player_head {dialog_name: "misc"}
 function pandamium:startup/rewards_shop/load_pages/append_own_player_head {dialog_name: "misc"}
-function pandamium:startup/rewards_shop/load_pages/append_item {dialog_name: "misc", reward_id: "endermite_minecart"}
-data modify storage pandamium:rewards_shop dialogs.main_menu.dialog.actions append value {label:"Miscellaneous Rewards",tooltip:["Common rewards and unique items",{color:"dark_gray",text:"\n• Golden Apple\n• Name Tag\n• 5 Experience Bottles\n• Book and Quill\n• Diamond\n• Mending Book\n• Ominous Bottle\n• Blindness Splash Potion\n• Bedrock Breaker\n• Dwarven Potion\n• Swift Sneak III Book\n• Enchanted Golden Apple\n• Your Head"},{color:"gray",text:"\nAnd More!"}],width:150,action:{type:"minecraft:run_command",command:"trigger rewards_shop set 101"}}
+data modify storage pandamium:rewards_shop dialogs.main_menu.dialog.actions append value {label:"General Rewards",tooltip:["Common rewards and unique items",{color:"dark_gray",text:"\n• Golden Apple\n• Name Tag\n• 5 Experience Bottles\n• Book and Quill\n• Diamond\n• Mending Book\n• Ominous Bottle\n• Blindness Splash Potion\n• Bedrock Breaker\n• Dwarven Potion\n• Swift Sneak III Book\n• Enchanted Golden Apple\n• Your Head"},{color:"gray",text:"\nAnd More!"}],width:150,action:{type:"minecraft:run_command",command:"trigger rewards_shop set 101"}}
 ##
 ## Wilderness Bound
 ##

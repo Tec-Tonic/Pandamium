@@ -106,7 +106,7 @@ data modify storage pandamium:temp s_end_mobs set string storage pandamium:temp 
 
 # build the dialog
 
-data modify storage pandamium:local functions."pandamium:triggers/world_info/*".dialog set value {type:"minecraft:notice",title:"World Info",external_title:"World Info",body:[],pause:false,after_action:"none",action:{label:{translate:"gui.back"},action:{type:"minecraft:show_dialog",dialog:"pandamium:options"}}}
+data modify storage pandamium:local functions."pandamium:triggers/world_info/*".dialog set value {type:"minecraft:notice",title:"World Info",external_title:"World Info",body:[],pause:false,after_action:"none",action:{label:{translate:"gui.done"},action:{type:"minecraft:show_dialog",dialog:"pandamium:options"}}}
 
 # Global
 

@@ -15,8 +15,7 @@ execute store success score <first_join> variable unless score @s playtime_ticks
 execute if score <first_join> variable matches 1 run function pandamium:player/on_join/first_join
 # new snapshot news
 function pandamium:utils/datetime/get_current_datetime_id
-execute if score <datetime_id> variable matches 838155600.. if score @s last_joined.datetime matches ..838155600 run dialog show @s pandamium:new_snapshot_news
-execute if score <datetime_id> variable matches 839462700.. if score @s last_joined.datetime matches ..839462700 run dialog show @s pandamium:new_snapshot_news
+execute if score <datetime_id> variable matches 860371200.. if score @s last_joined.datetime matches ..860371200 run dialog show @s pandamium:new_snapshot_news
 # set waypoint transmission restrictions
 function pandamium:player/update_locator_bar
 # update stats
@@ -74,8 +73,8 @@ execute if score <month> global matches 12 if score <day> global matches 25 run 
 execute if score <month> global matches 12 if score <day> global matches 25 if score <last_joined_relative_datetime> variable matches ..31535999 run tellraw @s [{text:"[Pandamium] ",color:"blue"},{text:"Merry Christmas!",color:"dark_green",shadow_color:[0.75f,0.0f,0.0f,1.0f]},{text:" 🎁",color:"#FF7FFF"},{text:" 🎄",color:"dark_green"}]
 # Christmas mobs spawn all December, so let players know on their first join of the month (they can
 # opt out of them with the "Christmas Mobs" gameplay option)
-execute if score <month> global matches 12 if score <last_joined_relative_datetime> variable matches ..29462399 run tellraw @s [{text:"[Pandamium] ",color:"blue"},{text:"Christmas Mobs",color:"aqua",bold:true},{text:" have begun spawning! You can disable them in the Christmas menu found by typing ",color:"green"},{text:"/trigger options",color:"aqua"}]
-execute if score <month> global matches 10 if score <last_joined_relative_datetime> variable matches ..24105599 run tellraw @s [{text:"[Pandamium] ",color:"blue"},{text:"Flying Eyeballs",color:"aqua",bold:true},{text:" have begun spawning! You can disable them in the Halloween menu found by typing ",color:"green"},{text:"/trigger options",color:"aqua"}]
+execute unless score <first_join> variable matches 1 if score <month> global matches 12 if score <last_joined_relative_datetime> variable matches ..29462399 run tellraw @s [{text:"[Pandamium] ",color:"blue"},{text:"Christmas Mobs",color:"aqua",bold:true},{text:" have begun spawning! You can disable them in the Christmas menu found by typing ",color:"green"},{text:"/trigger options",color:"aqua"}]
+execute unless score <first_join> variable matches 1 if score <month> global matches 10 if score <last_joined_relative_datetime> variable matches ..24105599 run tellraw @s [{text:"[Pandamium] ",color:"blue"},{text:"Flying Eyeballs",color:"aqua",bold:true},{text:" have begun spawning! You can disable them in the Halloween menu found by typing ",color:"green"},{text:"/trigger options",color:"aqua"}]
 execute if score <month> global matches 12 if score <day> global matches 25..26 if score <last_joined_relative_datetime> variable matches ..31535999 run loot give @s loot pandamium:items/heads/presents/christmas
 execute if score <month> global matches 12 if score <day> global matches 31 run advancement grant @s only pandamium:pandamium/events/new_years
 execute if score <month> global matches 1 if score <day> global matches 1 run advancement grant @s only pandamium:pandamium/events/new_years

@@ -455,5 +455,5 @@ schedule function pandamium:impl/leader_boards/update_holograms 60s
 execute unless score <disable_auto_messages> global matches 1 run schedule function pandamium:impl/auto_messages_loop 480s
 schedule function pandamium:impl/item_clear/regular/loop 1s
 schedule function pandamium:impl/phantoms/spawn_attempt 120s
-schedule function pandamium:impl/item_clear/netherrack_and_ender_pearls 10s
+schedule function pandamium:impl/item_clear/netherrack_only 10s
 schedule function pandamium:impl/custom_entities/custom_entity_types/defused_wither_skull/infinite_motion 3s

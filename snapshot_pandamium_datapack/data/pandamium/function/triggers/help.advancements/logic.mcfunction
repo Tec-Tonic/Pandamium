@@ -4,7 +4,7 @@ execute if score @s help.advancements matches 2 run return run function pandamiu
 execute unless score @s help.advancements matches 101..199 unless score @s help.advancements matches 201..299 run return run tellraw @s [{text:"[Help]",color:"dark_red"},{text:" That is not a valid option!",color:"red"}]
 scoreboard players operation <type> variable = @s help.advancements
 scoreboard players operation <type> variable %= #100 constant
-execute unless score <type> variable matches 1..14 run return run tellraw @s [{text:"[Help]",color:"dark_red"},{text:" That is not a valid option!",color:"red"}]
+execute unless score <type> variable matches 1..15 run return run tellraw @s [{text:"[Help]",color:"dark_red"},{text:" That is not a valid option!",color:"red"}]
 execute if score <type> variable matches 1 if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{advancements:{"pandamium:pandamium/mini_blocks/craft_every_mini_block":true}}}} run return run dialog show @s {type:"minecraft:notice",title:"Advancement Complete!","body":[{"type":"minecraft:plain_message","contents":["",{"color":"dark_green","bold":true,"text":"You've collected every mini block! congrats?"}],"width": 500}],can_close_with_escape:1b}
 execute if score <type> variable matches 1 run function pandamium:triggers/help.advancements/get_advancement_progress/craft_every_mini_block
 execute if score <type> variable matches 11 if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{advancements:{"pandamium:pandamium/mini_blocks/obtain_unobtainable_mini_blocks":true}}}} run return run dialog show @s {type:"minecraft:notice",title:"Advancement Complete!","body":[{"type":"minecraft:plain_message","contents":["",{"color":"dark_green","bold":true,"text":"You've obtained every unobtainable mini block! what?"}],"width": 500}],can_close_with_escape:1b}
@@ -33,6 +33,8 @@ execute if score <type> variable matches 9 if predicate {type:"minecraft:entity_
 execute if score <type> variable matches 9 run function pandamium:triggers/help.advancements/get_advancement_progress/whole_pack
 execute if score <type> variable matches 10 if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{advancements:{"minecraft:nether/explore_nether":true}}}} run return run dialog show @s {type:"minecraft:notice",title:"Advancement Complete!","body":[{"type":"minecraft:plain_message","contents":["",{"color":"dark_green","bold":true,"text":"You've explored every Nether biome!"}],"width": 500}],can_close_with_escape:1b}
 execute if score <type> variable matches 10 run function pandamium:triggers/help.advancements/get_advancement_progress/explore_nether
+execute if score <type> variable matches 15 if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{advancements:{"pandamium:minecraft/adventure/obtain_all_discs":true}}}} run return run dialog show @s {type:"minecraft:notice",title:"Advancement Complete!","body":[{"type":"minecraft:plain_message","contents":["",{"color":"dark_green","bold":true,"text":"You've obtained every music disc!"}],"width": 500}],can_close_with_escape:1b}
+execute if score <type> variable matches 15 run function pandamium:triggers/help.advancements/get_advancement_progress/obtain_all_discs
 execute if score @s help.advancements matches 101 run function pandamium:triggers/help.advancements/break_down_progress/craft_every_mini_block
 execute if score @s help.advancements matches 111 run function pandamium:triggers/help.advancements/break_down_progress/obtain_unobtainable_mini_blocks
 execute if score @s help.advancements matches 102 run function pandamium:triggers/help.advancements/break_down_progress/obtain_every_mob_head
@@ -47,4 +49,5 @@ execute if score @s help.advancements matches 106 run function pandamium:trigger
 execute if score @s help.advancements matches 108 run function pandamium:triggers/help.advancements/break_down_progress/complete_catalogue
 execute if score @s help.advancements matches 109 run function pandamium:triggers/help.advancements/break_down_progress/whole_pack
 execute if score @s help.advancements matches 110 run function pandamium:triggers/help.advancements/break_down_progress/explore_nether
+execute if score @s help.advancements matches 115 run function pandamium:triggers/help.advancements/break_down_progress/obtain_all_discs
 data remove storage pandamium:local functions."pandamium:triggers/help.advancements/main"

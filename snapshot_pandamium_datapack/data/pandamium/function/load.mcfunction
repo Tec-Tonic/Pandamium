@@ -329,6 +329,8 @@ scoreboard objectives add on_join.reload dummy
 scoreboard objectives add detect.leave_game custom:leave_game
 scoreboard objectives add detect.die deathCount
 scoreboard objectives add detect.use.ender_pearl used:ender_pearl
+scoreboard objectives add detect.use.experience_bottle used:experience_bottle
+scoreboard objectives add detect.use.ice_ball used:ice_ball
 scoreboard objectives add detect.use.snowball used:snowball
 scoreboard objectives add detect.use.trident used:trident
 scoreboard objectives add detect.use.egg used:egg
@@ -464,5 +466,5 @@ execute unless score <disable_auto_messages> global matches 1 run schedule funct
 schedule function pandamium:impl/item_clear/regular/loop 1s
 schedule function pandamium:impl/phantoms/spawn_attempt 120s
 schedule function pandamium:impl/christmas_mobs/spawn_attempt 120s
-schedule function pandamium:impl/item_clear/netherrack_and_ender_pearls 10s
+schedule function pandamium:impl/item_clear/netherrack_only 10s
 schedule function pandamium:impl/custom_entities/custom_entity_types/defused_wither_skull/infinite_motion 3s

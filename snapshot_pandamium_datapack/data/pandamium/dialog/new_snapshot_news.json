@@ -7,7 +7,7 @@
 			"contents": [
 				"",
 				{
-					"text": "Wilderness Bound",
+					"text": "Winter Drop 2026",
 					"bold": true
 				},
 				{
@@ -15,7 +15,7 @@
 					"underlined": true
 				},
 				{"bold":true,"underlined":true,"text":"Overview\n\n"},
-				"This drop adds a new biome, a new structure, more stair and slab variants and two brand new blocks to the game!",
+				"This drop adds a new cave biome, a new item, many new ice themed blocks, as well as a brand new zombie variant to the game!",
 				{
 					"text": "\n                                                                                                \n\n",
 					"underlined": true
@@ -28,10 +28,10 @@
 		{
 			"type": "minecraft:item",
 			"item": {
-				"id": "minecraft:poplar_sapling"
+				"id": "minecraft:packed_ice"
 			},
 			"description": {
-				"contents": [{"bold":true,"underlined":true,"text":"Dappled Forest"}]
+				"contents": [{"bold":true,"underlined":true,"text":"Ice Caves"}]
 			},
 			"show_tooltip": false,
 			"show_decorations": false
@@ -39,17 +39,17 @@
 		{
 			"type": "minecraft:plain_message",
 			"contents": [
-				"Dappled Forests resemble a Forest biome but with orange tinted foliage.\nIt contains poplar trees, Shelf Mushrooms and Red Shrubs."
+				"Ice Caves are a new biome that generates under cold biomes.\nIt contains packed ice, icicles as well as ice crystals."
 			],
 			"width": 400
 		},
 		{
 			"type": "minecraft:item",
 			"item": {
-				"id": "minecraft:abandoned_camp_map"
+				"id": "minecraft:frostbite_spawn_egg"
 			},
 			"description": {
-				"contents": [{"bold":true,"underlined":true,"text":"Abandoned Camp Structure"}]
+				"contents": [{"bold":true,"underlined":true,"text":"Frostbite Zombie"}]
 			},
 			"show_tooltip": false,
 			"show_decorations": false
@@ -57,17 +57,17 @@
 		{
 			"type": "minecraft:plain_message",
 			"contents": [
-				"Abandoned Camps generate in all forest-like biomes and are of unknown origin.\nEach biome has its own set of randomized variants with chests that contain maps pointing to other structures."
+				"Frostbites are a new icy variant of the zombie that spawns in cold biomes.\nWhen they hit the players they apply a new freezing effect.\n Frostbites can also spawn holding Ice Balls, which they will throw."
 			],
 			"width": 400
 		},
 		{
 			"type": "minecraft:item",
 			"item": {
-				"id": "minecraft:white_wool_stairs"
+				"id": "minecraft:ice_ball"
 			},
 			"description": {
-				"contents": [{"bold":true,"underlined":true,"text":"Wool and Concrete Stairs and Slabs"}]
+				"contents": [{"bold":true,"underlined":true,"text":"Ice Balls"}]
 			},
 			"show_tooltip": false,
 			"show_decorations": false
@@ -75,43 +75,7 @@
 		{
 			"type": "minecraft:plain_message",
 			"contents": [
-				"Wool and Concrete can now be crafted into Stairs and Slabs giving a lot of new choices to builders"
-			],
-			"width": 400
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:white_cushion"
-			},
-			"description": {
-				"contents": [{"bold":true,"underlined":true,"text":"Cushions"}]
-			},
-			"show_tooltip": false,
-			"show_decorations": false
-		},
-		{
-			"type": "minecraft:plain_message",
-			"contents": [
-				"Cushions are items you can craft with 3 Wool Slabs, they can be placed and sat on.\n Like Item Frames multiple cushions can occupy the same block, however, they can be inside other blocks and not pop off"
-			],
-			"width": 400
-		},
-		{
-			"type": "minecraft:item",
-			"item": {
-				"id": "minecraft:straw_bed"
-			},
-			"description": {
-				"contents": [{"bold":true,"underlined":true,"text":"Straw Beds"}]
-			},
-			"show_tooltip": false,
-			"show_decorations": false
-		},
-		{
-			"type": "minecraft:plain_message",
-			"contents": [
-				"3 Straw Beds can be crafted with 3 hay bales. They act exactly like beds, however, they dont set your spawnpoint and they are one-use only"
+				"Ice Balls drop from the new frostbite mob and can be thrown like snowball, dealing damage to the player the closer they are.\nThey can also be put in a brewing stand to create a new potion, which will apply a similar effect to powder snow to anyone who has it."
 			],
 			"width": 400
 		}

@@ -126,6 +126,15 @@
           "value": "pandamium:items/heads/mobs/christmas_mobs/christmas_parched"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "pandamium:items/heads/mobs/frostbite/frostbite"
+        }
+      ]
     }
   ]
 }

@@ -288,4 +288,23 @@ execute if score <total_missing> variable matches 1.. run execute store result s
 execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[4].text set string storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[4].text
 
 
+# Music to My Ears
+
+function pandamium:triggers/help.advancements/get_advancement_progress/obtain_all_discs
+
+data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions append value {label:{atlas:"minecraft:items",sprite:"minecraft:item/music_disc_bounce",color:"#FFFFFF",shadow_color:0},tooltip:{text:"Obtain every music disc",color:"dark_purple"},action:{type:"run_command",command:"trigger help.advancements set 115"},width:20}
+
+data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions append value {label:[{text:"Music to My Ears"},{text:" "}],tooltip:{text:"Obtain every music disc",color:"dark_purple"},action:{type:"run_command",command:"trigger help.advancements set 115"},width:175}
+
+execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label append value {"text":"???","color":"aqua"}
+execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label append value {"text":"/","color":"gray"}
+execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label append value {"text":"???","color":"dark_aqua"}
+execute if score <total_missing> variable matches ..0 run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label append value {"text":"Completed!","color":"dark_green"}
+
+execute if score <total_missing> variable matches 1.. run execute store result storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[2].text int 1 run scoreboard players get <total_completed> variable
+execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[2].text set string storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[2].text
+execute if score <total_missing> variable matches 1.. run execute store result storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[4].text int 1 run scoreboard players get <goal> variable
+execute if score <total_missing> variable matches 1.. run data modify storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[4].text set string storage pandamium:local functions."pandamium:triggers/help.advancements/*".dialog.actions[-1].label[4].text
+
+
 function pandamium:utils/show_dialog with storage pandamium:local functions."pandamium:triggers/help.advancements/*"

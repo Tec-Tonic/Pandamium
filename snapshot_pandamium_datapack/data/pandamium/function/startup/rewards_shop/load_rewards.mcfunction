@@ -5,7 +5,7 @@ function pandamium:startup/rewards_shop/load_rewards/items {cost: 1, reward_id: 
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 1, reward_id: "5_experience_bottles", properties: {}}
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 1, reward_id: "pandamium_guidebook", properties: {}}
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 2, reward_id: "book_and_quill", properties: {}}
-function pandamium:startup/rewards_shop/load_rewards/items {cost: 2, reward_id: "endermite_minecart", properties: {}}
+#function pandamium:startup/rewards_shop/load_rewards/items {cost: 2, reward_id: "endermite_minecart", properties: {}}
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 3, reward_id: "diamond", properties: {}}
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 5, reward_id: "night_vision_potion", properties: {}}
 function pandamium:startup/rewards_shop/load_rewards/items {cost: 10, reward_id: "mending_enchanted_book", properties: {name: {color: "aqua", text: "Mending Book"}}}

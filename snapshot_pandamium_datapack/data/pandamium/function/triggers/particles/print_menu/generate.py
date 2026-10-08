@@ -73,6 +73,7 @@ trails = [
 			(78,'Question'),
 			(79,'Storm'),
 			(80,'Lava Storm'),
+			(103,'Snow Storm'),
 		]
 	],
 	[
