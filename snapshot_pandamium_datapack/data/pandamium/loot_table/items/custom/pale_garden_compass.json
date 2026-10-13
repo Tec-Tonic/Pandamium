@@ -45,7 +45,6 @@
                 "minecraft:consumable": {
                   "consume_seconds": 999999,
                   "animation": "none",
-                  "sound": "minecraft:intentionally_empty",
                   "has_consume_particles": false
                 },
                 "minecraft:use_cooldown": {
