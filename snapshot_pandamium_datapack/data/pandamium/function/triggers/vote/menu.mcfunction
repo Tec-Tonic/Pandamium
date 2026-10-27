@@ -275,7 +275,7 @@ data modify storage pandamium:local functions."pandamium:triggers/vote/*".dialog
 			],\
 			"action": {\
 				"type": "minecraft:open_url",\
-				"url": "https://www.pandamium.com/vote/snapshot"\
+				"url": "https://www.pandamium.net/vote/snapshot"\
 			}\
 		}\
 	],\
